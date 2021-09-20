@@ -1,0 +1,166 @@
+// button extra small
+.btn-group-xs > .btn,
+.btn-xs {
+    // padding: 0.09rem 0.18rem;
+    padding: 0;
+    // font-size: 0.875rem;
+    line-height: 0.5;
+    border-radius: 0.2rem;
+}
+
+.vertical-center {
+    min-height: 94%;
+    min-height: 94vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.2);
+}
+
+.link a {
+    text-decoration: none;
+    color: $main;
+}
+
+.link-dark a {
+    text-decoration: none;
+    color: $main-dark;
+}
+
+// Pagination
+.paginationActiveLinkClass {
+    color: white !important;
+    border: 1px solid rgba(128, 128, 128, 0.3) !important;
+    background-color: $main !important;
+}
+
+.paginationActiveLinkClass-dark {
+    color: black !important;
+    border: 1px solid rgba(128, 128, 128, 0.3) !important;
+    background-color: $main-dark !important;
+}
+
+.paginationLinkClass {
+    border: 1px solid rgba(128, 128, 128, 0.3) !important;
+}
+
+.profile-pic {
+    max-width: 12rem;
+    border-radius: 0.45rem;
+}
+
+.muted_border {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.custom-border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: lighten($color: $main, $amount: 20%);
+}
+
+.custom-border-dark {
+    border-style: solid;
+    border-width: 2px;
+    border-color: lighten($color: $main-dark, $amount: 20%);
+}
+
+// User Registration Form
+.divider-text {
+    position: relative;
+}
+
+.divider-text span {
+    font-size: 0.75rem;
+    position: relative;
+    z-index: 2;
+}
+
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.fa-icon {
+    min-width: 1rem;
+}
+
+// DropDown
+.dropdown-menu {
+    max-height: 15rem;
+    overflow-y: scroll;
+}
+
+.dropdown-text:hover {
+    color: $main !important;
+    background-color: $hover !important;
+}
+
+.dropdown-text-dark:hover {
+    color: $main-dark !important;
+    background-color: $hover-dark !important;
+}
+
+.dropdown-text:visited {
+    background-color: $main;
+}
+
+.dropdown-text-dark:visited {
+    // background-color: $main-dark;
+    // color: #000;
+    background-color: #855d00;
+}
+
+// Shopping Cart
+.show-cart-count {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    transition: linear all 0.1s;
+    text-align: center;
+
+    &:hover {
+        border-bottom: 2px solid #888;
+    }
+
+    &:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #888;
+    }
+}
+
+.transparent__input {
+    flex: 2;
+    border: none;
+    outline: none;
+    background: transparent;
+    // border-bottom: 2px solid $main;
+}
+
+// Carousel
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: rgba(255, 255, 255, 0.2);
+}
